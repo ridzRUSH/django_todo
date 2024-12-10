@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Django migrations
+**/migrations/*
+
+# Environment variables
+.env
+
+# Database files
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Media and static files
+media/
+staticfiles/
+
+# Virtual environment
+venv/
+env/
+*.egg-info/
+.eggs/
+
+# IDE-specific files
+.vscode/
+
+
+
+
+# Windows
+Thumbs.db
