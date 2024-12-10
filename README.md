@@ -108,8 +108,3 @@ Here are some useful Django commands that you might need during development:
   python manage.py migrate
   ```
 
-- **Create a superuser (for Django Admin access)**:  
-  ```bash
-  python manage.py createsuperuser
-  ```
-
