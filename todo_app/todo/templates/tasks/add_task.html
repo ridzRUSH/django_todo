@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Task</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        gap: 10px;
+      }
+      input[type="text"],
+      button {
+        padding: 10px;
+        font-size: 16px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Task</h1>
+    <form method="POST">
+      {% csrf_token %}
+      <input type="text" name="title" placeholder="Enter task title" required />
+      <button type="submit">Add Task</button>
+    </form>
+    <a href="/">Back to Task List</a>
+  </body>
+</html>
